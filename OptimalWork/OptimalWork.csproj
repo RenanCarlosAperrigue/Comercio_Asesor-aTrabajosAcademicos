@@ -146,9 +146,13 @@
     <Content Include="images\edit.png" />
     <Content Include="images\fancybox_sprite.png" />
     <Content Include="images\img-sprite.png" />
-    <Content Include="images\logo.png" />
+    <Content Include="images\logo2.jpg" />
     <Content Include="images\marker.png" />
     <Content Include="images\nav.png" />
+    <Content Include="images\No2.jpg" />
+    <Content Include="images\No4.jpg" />
+    <Content Include="images\No6.jpg" />
+    <Content Include="images\No7.jpg" />
     <Content Include="images\nz.png" />
     <Content Include="images\pic1.jpg" />
     <Content Include="images\pic10.jpg" />
@@ -163,12 +167,14 @@
     <Content Include="images\pic8.jpg" />
     <Content Include="images\pic9.jpg" />
     <Content Include="images\pk.png" />
+    <Content Include="images\recursos.jpg" />
     <Content Include="images\s1.jpg" />
     <Content Include="images\s2.jpg" />
     <Content Include="images\s3.jpg" />
     <Content Include="images\search.png" />
-    <Content Include="images\slider1.jpg" />
     <Content Include="images\slider2.jpg" />
+    <Content Include="images\slider3.jpg" />
+    <Content Include="images\slider4.jpg" />
     <Content Include="images\srl.png" />
     <Content Include="images\team1.jpg" />
     <Content Include="images\team2.jpg" />
@@ -186,6 +192,7 @@
     <Content Include="js\jquery.etalage.min.js" />
     <Content Include="js\jquery.fancybox.js" />
     <Content Include="js\jquery.flexisel.js" />
+    <Content Include="js\jquery.form.min.js" />
     <Content Include="js\jquery.magnific-popup.js" />
     <Content Include="js\jquery.min.js" />
     <Content Include="js\responsive-nav.js" />
@@ -202,6 +209,7 @@
     </Content>
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="Areas\admin\Views\Producto\Adjuntos.cshtml" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
@@ -212,6 +220,7 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Areas\admin\adminAreaRegistration.cs" />
     <Compile Include="Areas\admin\Controllers\ProductoController.cs" />
+    <Compile Include="Areas\admin\Models\ResponseModel.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -286,7 +295,7 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Areas\admin\Models\" />
+    <Folder Include="ImgProductos\" />
   </ItemGroup>
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />

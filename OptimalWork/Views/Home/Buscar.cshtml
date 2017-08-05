@@ -7,38 +7,51 @@
     <div class="shop_top">
         <h3><span class="light">Resultados:</span> &quot;@ViewBag.clave&quot;</h3>
         <div class="container">
-            <div class="row shop_box-top">
+            <!--  ==========  -->
+            <!--  = Products =  -->
+            <!--  ==========  -->
+            <div class="row popup-products">
+                <div id="isotopeContainer" class="isotope-container">
 
-                @foreach (var item in Model)
-                { 
+                    @foreach (var item in Model)
+                    {
+                        var imagen = @item.ProductoImagen.FirstOrDefault();
+                        string img = imagen == null ? "no_disponible.jpg" : imagen.Imagen;
 
-                <div class="col-md-3 shop_box">
-                    <a href="single.html">
-                        <img src="~/images//pic5.jpg" class="img-responsive" alt="" />
-                        @*<span class="new-box">
-                            <span class="new-label">New</span>
-                        </span>*@
-                        @*<span class="sale-box">
-                            <span class="sale-label">Sale!</span>
-                        </span>*@
-                        <div class="shop_desc">
-                            <h3><a href="#">aliquam volutp</a></h3>
-                            <p>@item.Descripcion</p>
-                            @*<span class="reducedfrom">$66.00</span>*@
-                            <span class="actual">S/ @item.Precio</span><br>
-                            <ul class="buttons">
-                                <li class="cart"><a href="#">Añadir al carrito</a></li>
-                                <li class="shop_btn"><a href="#">Leer más</a></li>
-                                <div class="clear"> </div>
-                            </ul>
-                        </div>
-                    </a>
+                            <!--  ==========  -->
+                            <!--  = Single Product =  -->
+                            <!--  ==========  -->
+                        <div class="span3 filter--sunglasses" data-price="688" data-popularity="5" data-size="m|xl|xxl" data-color="pink" data-brand="nike">
+                            <div class="product">
+
+                                <div class="product-img">
+                                    <div class="picture">
+                                        <img width="540" height="374" alt="" src="~/ImgProductos/@img" />
+                                        <div class="img-overlay">
+                                            <a class="btn more btn-primary" href="#">Detalles</a>
+                                            <a onclick="AgregarCarrito(@item.ProductoId,'@item.Denominacion','@img',@item.Precio)" class="btn buy btn-danger" href="#">Al Carrito</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="main-titles no-margin">
+                                    <h4 class="title">S/ @item.Precio</h4>
+                                    <h5 class="no-margin isotope--title">@item.Descripcion</h5>
+                                </div>
+                                <p class="center-align stars">
+                                    <span class="icon-star stars-clr"></span>
+                                    <span class="icon-star stars-clr"></span>
+                                    <span class="icon-star stars-clr"></span>
+                                    <span class="icon-star stars-clr"></span>
+                                    <span class="icon-star stars-clr"></span>
+
+                                </p>
+                            </div>
+                        </div> <!-- /single product -->
+
+                    }
                 </div>
-
-                }
-               
-
             </div>
+
             @*<div class="row">
                 <div class="col-md-3 shop_box">
                     <a href="single.html">

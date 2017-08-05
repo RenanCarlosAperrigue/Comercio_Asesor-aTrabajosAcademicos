@@ -7,6 +7,18 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <!DOCTYPE HTML>
 <html>
 <head>
+    <!-- Twitter Bootstrap -->
+    <link href="~/stylesheets/bootstrap.css" rel="stylesheet" />
+    <link href="~/stylesheets/responsive.css" rel="stylesheet" />
+    <!-- Slider Revolution -->
+    <link rel="stylesheet" href="~/js/rs-plugin/css/settings.css" type="text/css" />
+    <!-- jQuery UI -->
+    <link rel="stylesheet" href="~/js/jquery-ui-1.10.3/css/smoothness/jquery-ui-1.10.3.custom.min.css" type="text/css" />
+    <!-- PrettyPhoto -->
+    <link rel="stylesheet" href="~/js/prettyphoto/css/prettyPhoto.css" type="text/css" />
+    <!-- main styles -->
+
+    <link href="~/stylesheets/main.css" rel="stylesheet" />
     <title>Free Snow Bootstrap Website Template | Home :: w3layouts</title>
     <link href="~/css/bootstrap.css" rel='stylesheet' type='text/css' />
     <link href="~/css/style.css" rel='stylesheet' type='text/css' />
@@ -60,17 +72,17 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                 <div class="col-md-12">
                     <div class="header-left">
                         <div class="logo">
-                            <a href="index.html"><img src="~/images/logo.png" alt="" /></a>
+                            <a href="index.html"><img src="~/images/logo2.jpg" width="65" height="65" alt="" /></a>
                         </div>
                         <div class="menu">
                             <a class="toggleMenu" href="#"><img src="~/images/nav.png" alt="" /></a>
                             <ul class="nav" id="nav">
-                                <li><a href="shop.html">Shop</a></li>
-                                <li><a href="team.html">Team</a></li>
-                                <li><a href="experiance.html">Events</a></li>
+                                <li><a href="shop.html">PRODUCTOS</a></li>
+                                <li><a href="team.html">EQUIPO</a></li>
+                                @*<li><a href="experiance.html">Events</a></li>
                                 <li><a href="experiance.html">Experiance</a></li>
-                                <li><a href="shop.html">Company</a></li>
-                                <li><a href="contact.html">Contact</a></li>
+                                <li><a href="shop.html">Company</a></li>*@
+                                <li><a href="contact.html">CONTACTO</a></li>
                                 <div class="clear"></div>
                             </ul>
                             <script type="text/javascript" src="~/js/responsive-nav.js"></script>
@@ -109,33 +121,40 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                        
 
                          <!----//search-scripts---->
+                        
+                        <!--  = Cart =  -->
+                        <!--  ==========  -->
+                        <div class="span3">
+                            <div class="cart-container" id="cartContainer">
+                                <div class="cart">
+                                    <p class="items">CART <span id="nroProductosCarrito" class="dark-clr">(0)</span></p>
+                                    <p id="totalCompraCarrito" class="dark-clr hidden-tablet">S/. 0.00</p>
+                                    <a href="checkout-step-1.html" class="btn btn-danger">
+                                        <!-- <span class="icon icons-cart"></span> -->
+                                        <i class="icon-shopping-cart"></i>
+                                    </a>
+                                </div>
+                                <div class="open-panel">
 
-                        <ul class="icon1 sub-icon1 profile_img">
-                            <li>
-                                <a class="active-icon c1" href="#"> </a>
-                                <ul class="sub-icon1 list">
-                                    <div class="product_control_buttons">
-                                        <a href="#"><img src="~/images/edit.png" alt="" /></a>
-                                        <a href="#"><img src="~/images/close_edit.png" alt="" /></a>
+                                    <div id="itemcarrito"></div>
+
+                                    <div class="summary">
+                                        <div class="line">
+                                            <div class="row-fluid">
+                                                <div class="span6">TOTAL:</div>
+                                                <div id="totalCarrito" class="span6 align-right size-16">S/. 0.00</div>
+                                            </div>
+                                        </div>
                                     </div>
-                                    <div class="clear"></div>
-                                    <li class="list_img"><img src="~/images/1.jpg" alt="" /></li>
-                                    <li class="list_desc">
-                                        <h4><a href="#">velit esse molestie</a></h4><span class="actual">
-                                            1 x
-                                            $12.00
-                                        </span>
-                                    </li>
-                                    <div class="login_buttons">
-                                        <div class="check_button"><a href="checkout.html">Check out</a></div>
-                                        <div class="login_button"><a href="login.html">Login</a></div>
-                                        <div class="clear"></div>
+                                    <div class="proceed">
+                                        <a href="@Url.Action("Paso1","Compra")" class="btn btn-danger pull-right bold higher">PAGAR <i class="icon-shopping-cart"></i></a>
+                                        <small>Shipping costs are calculated based on location. <a href="#">More information</a></small>
                                     </div>
-                                    <div class="clear"></div>
-                                </ul>
-                            </li>
-                        </ul>
-                        <div class="clear"></div>
+                                </div>
+                            </div>
+                        </div> <!-- /cart -->
+
+
                     </div>
                 </div>
             </div>
@@ -149,38 +168,37 @@ License URL: http://creativecommons.org/licenses/by/3.0/
             <div class="row">
                 <div class="col-md-3">
                     <ul class="footer_box">
-                        <h4>Products</h4>
-                        <li><a href="#">Mens</a></li>
-                        <li><a href="#">Womens</a></li>
-                        <li><a href="#">Youth</a></li>
+                        <h4>Niveles</h4>
+                        <li><a href="#">Bachillerato</a></li>
+                        <li><a href="#">Licenciatura</a></li>
+                        <li><a href="#">Maestría</a></li>
+                        <li><a href="#">Doctorado</a></li>
+                        <li><a href="#">Segunda especialidad</a></li>
                     </ul>
                 </div>
                 <div class="col-md-3">
                     <ul class="footer_box">
-                        <h4>About</h4>
-                        <li><a href="#">Careers and internships</a></li>
-                        <li><a href="#">Sponserships</a></li>
-                        <li><a href="#">team</a></li>
-                        <li><a href="#">Catalog Request/Download</a></li>
+                        <h4>Acerca de</h4>
+                        <li><a href="#">Carreras y áreas</a></li>                        
+                        <li><a href="#">Grupo de Trabajo</a></li>
+                        <li><a href="#">Catálogo</a></li>
                     </ul>
                 </div>
                 <div class="col-md-3">
                     <ul class="footer_box">
-                        <h4>Customer Support</h4>
-                        <li><a href="#">Contact Us</a></li>
-                        <li><a href="#">Shipping and Order Tracking</a></li>
-                        <li><a href="#">Easy Returns</a></li>
-                        <li><a href="#">Warranty</a></li>
-                        <li><a href="#">Replacement Binding Parts</a></li>
+                        <h4>Soporte al cliente</h4>
+                        <li><a href="#">Contáctanos</a></li>
+                        <li><a href="#">Trabaja con nosotros</a></li>
+                       
                     </ul>
                 </div>
                 <div class="col-md-3">
                     <ul class="footer_box">
-                        <h4>Newsletter</h4>
+                        <h4>Novedades</h4>
                         <div class="footer_search">
                             <form>
-                                <input type="text" value="Enter your email" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Enter your email';}">
-                                <input type="submit" value="Go">
+                                <input type="text" value="Ingresa tu email..." onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Enter your email';}">
+                                <input type="submit" value="Ir">
                             </form>
                         </div>
                         <ul class="social">
@@ -214,5 +232,74 @@ License URL: http://creativecommons.org/licenses/by/3.0/
             </div>
         </div>
     </div>
+    <script src="~/js/custom.js" type="text/javascript"></script>
+    <script>
+        $(function () {
+            var carrito = localStorage.getItem("carrito");
+            var productos = [];
+            if (carrito != null) {
+                productos = JSON.parse(carrito);
+                CargaCarrito(productos);
+            }
+        });
+
+        function CargaCarrito(productos) {
+            var html = '';
+            var total = 0;
+
+            $("#nroProductosCarrito").text('(' + productos.length + ')');
+
+            $.each(productos, function () {
+                total += this.Precio * this.Cantidad
+                html += '<div class="item-in-cart clearfix">' +
+                       '    <div class="image">' +
+                '             <img src="/ImgProductos/' + this.Imagen + '"  width="124" height="124" alt="cart item" />' +
+                '           </div>' +
+                '           <div class="desc">' +
+                '                 <strong><a href="product.html">' + this.Denominacion + '</a></strong>' +
+                '                <span class="light-clr qty">Qty: ' + this.Cantidad + ' &nbsp;' +
+                '                       <a href="#" class="icon-remove-sign" title="Remove Item"></a>' +
+                '                    </span>' +
+                '                </div>' +
+                '                <div class="price">' +
+                '                   <strong>S/. ' + this.Precio + '</strong>' +
+                '               </div>' +
+                '           </div>';
+            });
+            $('#itemcarrito').html(html);
+
+            $("#totalCompraCarrito,#totalCarrito").text('S/.' + total);
+
+        }
+
+        function AgregarCarrito(productoid, denominacion, imagen, precio) {
+            var carrito = localStorage.getItem("carrito");
+            var productos = [];
+            if (carrito != null) {
+                productos = JSON.parse(carrito);
+            }
+
+            var itemActual;
+            for (var i = 0; i < productos.length; i++) {
+                if (productos[i].ProductoId == productoid) {
+                    itemActual = productos[i];
+                }
+            }
+
+            if (!itemActual) {
+                productos.push({ ProductoId: productoid, Denominacion: denominacion, Precio: precio, Cantidad: 1, Imagen: imagen });
+            } else {
+                itemActual.Cantidad++;
+            }
+
+            var jsonStr = JSON.stringify(productos);
+            localStorage.setItem("carrito", jsonStr);
+
+            CargaCarrito(productos);
+
+        }
+
+    </script>
+
 </body>
 </html>

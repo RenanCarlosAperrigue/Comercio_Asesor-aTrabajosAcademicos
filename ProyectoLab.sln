@@ -5,25 +5,25 @@ VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OptimalWork", "OptimalWork\OptimalWork.csproj", "{0ACA3606-0AAE-4171-88A7-80C764318AB1}"
 EndProject
-Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "proyecto optimal work", "..\..\..\..\Desktop\COMERCIO ELECTRÓNICO\plantillas\proyecto optimal work\", "{6847F770-E6B2-4C36-BF68-08DB2EAF0AC6}"
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "proyecto optimal work", "..\..\..\..\..\Desktop\COMERCIO ELECTRÓNICO\plantillas\proyecto optimal work\", "{6847F770-E6B2-4C36-BF68-08DB2EAF0AC6}"
 	ProjectSection(WebsiteProperties) = preProject
 		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.0"
 		Debug.AspNetCompiler.VirtualPath = "/localhost_59933"
-		Debug.AspNetCompiler.PhysicalPath = "..\..\..\..\Desktop\COMERCIO ELECTRÓNICO\plantillas\proyecto optimal work\"
+		Debug.AspNetCompiler.PhysicalPath = "..\..\..\..\..\Desktop\COMERCIO ELECTRÓNICO\plantillas\proyecto optimal work\"
 		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_59933\"
 		Debug.AspNetCompiler.Updateable = "true"
 		Debug.AspNetCompiler.ForceOverwrite = "true"
 		Debug.AspNetCompiler.FixedNames = "false"
 		Debug.AspNetCompiler.Debug = "True"
 		Release.AspNetCompiler.VirtualPath = "/localhost_59933"
-		Release.AspNetCompiler.PhysicalPath = "..\..\..\..\Desktop\COMERCIO ELECTRÓNICO\plantillas\proyecto optimal work\"
+		Release.AspNetCompiler.PhysicalPath = "..\..\..\..\..\Desktop\COMERCIO ELECTRÓNICO\plantillas\proyecto optimal work\"
 		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_59933\"
 		Release.AspNetCompiler.Updateable = "true"
 		Release.AspNetCompiler.ForceOverwrite = "true"
 		Release.AspNetCompiler.FixedNames = "false"
 		Release.AspNetCompiler.Debug = "False"
 		VWDPort = "59933"
-		SlnRelativePath = "..\..\..\..\Desktop\COMERCIO ELECTRÓNICO\plantillas\proyecto optimal work\"
+		SlnRelativePath = "..\..\..\..\..\Desktop\COMERCIO ELECTRÓNICO\plantillas\proyecto optimal work\"
 	EndProjectSection
 EndProject
 Global
